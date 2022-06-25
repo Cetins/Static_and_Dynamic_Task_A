@@ -31,7 +31,8 @@ class CardGame: #Class hasn't been initialised
   
 
 
-def cards_total(self, cards): # indentation error whole funtction is out of class scope
+def cards_total(self, cards): # indentation error whole funtction is out of class scope, no need to use cards as a parameter
+                              # class has cards property
   total # total = 0
   for card in cards:
     total += card.value

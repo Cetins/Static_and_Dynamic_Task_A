@@ -6,11 +6,11 @@
 
 class CardGame:
   def __init__(self, cards):
-    self.cards = cards
+        self.cards = cards
 
   def check_for_ace(self, card):
     if card.value == 1:
-      return True
+      return True     
     return False
    
   def highest_card(self, card1, card2):
@@ -18,8 +18,8 @@ class CardGame:
       return card1
     return card2
   
-  def cards_total(self, cards):
+  def cards_total(self):
     total = 0
-    for card in cards:
+    for card in self.cards:
       total += card.value
     return (f"You have a total of {total}")
